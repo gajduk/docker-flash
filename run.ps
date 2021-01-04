@@ -1,0 +1,6 @@
+# follow instructions to install and configure xlauncher
+# https://dev.to/darksmile92/run-gui-app-in-linux-docker-container-on-windows-host-4kde
+docker build -t flash .
+
+# make sure to change the ip to match your local ip, check it with ipconfig
+docker run --rm -e DISPLAY=192.168.178.108:0.0 flash
